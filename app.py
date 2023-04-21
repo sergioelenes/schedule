@@ -6,7 +6,7 @@ import requests
 import os
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv('dt.env')
 
 bt = os.getenv('bt')
 cid = os.getenv('cid')
