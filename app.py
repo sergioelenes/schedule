@@ -26,7 +26,7 @@ def send_telegram_message():
     print(response.json())
 
 #scheduler.add_job(id='send_telegram_message', func=send_telegram_message, trigger='interval', days=3, start_date=datetime.now()+timedelta(seconds=1), timezone='America/Mazatlan')
-scheduler.add_job(id='send_telegram_message', func=send_telegram_message, trigger=IntervalTrigger(minutes=20), start_date=datetime.now()+timedelta(seconds=1))
+scheduler.add_job(id='send_telegram_message', func=send_telegram_message, trigger=IntervalTrigger(minutes=10), start_date=datetime.now()+timedelta(seconds=1))
 # Inicialización de la programación en segundo plano
 scheduler.init_app(app)
 scheduler.start()
