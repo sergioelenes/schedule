@@ -6,10 +6,10 @@ import requests
 import os
 from dotenv import load_dotenv
 
-load_dotenv('ENV')
+load_dotenv('dt.env')
 
-bt = os.getenv('bt')
-cid = os.getenv('cid')
+bt = '5133345908:AAHWId08dwpEafQoo0Kv3NtfpSyLrT6pM4Y'
+cid = '-918593451'
 
 app = Flask(__name__)
 scheduler = APScheduler()
